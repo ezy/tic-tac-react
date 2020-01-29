@@ -17,4 +17,5 @@ export default styled(App)`
   font-family: Courier New, Courier, monospace;
   margin: 0 auto;
   width: 200px;
+  text-align: center;
 `;
