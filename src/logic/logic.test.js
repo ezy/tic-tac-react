@@ -1,5 +1,9 @@
 import { resultForSymbol } from './logic';
 import { X, O } from '../symbols/symbols';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 it('Should indicate no winning result', () => {
   const board = {

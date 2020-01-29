@@ -1,8 +1,13 @@
 import React from 'react';
-import { shallow } from 'enzyme';
 import App from './App';
 import Result from './Result';
 import Board from './Board';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
+
+const { shallow } = Enzyme;
 
 it('Should render an App component with Result and Board components', () => {
   const wrapper = shallow(<App />).dive();

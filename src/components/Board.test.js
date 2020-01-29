@@ -1,10 +1,15 @@
 import React from 'react';
-import { shallow } from 'enzyme';
 import { X, O } from '../symbols/symbols';
 import BlankSymbol from './BlankSymbol';
 import XSymbol from './XSymbol';
 import OSymbol from './OSymbol';
 import { PureBoard as Board } from './Board';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
+
+const { shallow } = Enzyme;
 
 const board = {
     0: [X, O, ''],

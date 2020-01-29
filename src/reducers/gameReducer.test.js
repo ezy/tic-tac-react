@@ -1,5 +1,9 @@
 import { initialState, gameReducer } from './gameReducer';
 import { X, O } from '../symbols/symbols';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 it('Should add a symbol at given position and change turn', () => {
   const state = {
