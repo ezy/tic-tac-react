@@ -4,19 +4,19 @@
   "private": true,
   "homepage": "http://belfz.github.io/tic-tac-react",
   "devDependencies": {
-    "enzyme": "^2.7.0",
-    "gh-pages": "^0.12.0",
-    "react-addons-test-utils": "^15.4.2",
-    "react-scripts": "1.0.17"
+    "enzyme": "^3.11.0",
+    "gh-pages": "^2.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-scripts": "3.3.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
-    "prop-types": "^15.6.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.1",
-    "redux": "^3.6.0",
-    "styled-components": "^2.3.3"
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "styled-components": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,5 +24,17 @@
     "deploy": "npm run build&&gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
