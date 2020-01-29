@@ -1,2 +1,2 @@
-export const X = 'x';
-export const O = 'o';
+export const X = 'Crypto';
+export const O = 'Banking';
